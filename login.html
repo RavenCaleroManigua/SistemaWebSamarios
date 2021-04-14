@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+	<meta name="description" content="Samarios RC" />
+	<meta name="robots" content="" />
+	<title>Samarios Rugby Club</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="./imagenes/samarioscancha.jpg" />
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="./css/loginstyle.css" />	
+    <link rel="stylesheet" href="./fonts/style.css" />
+	<link rel="stylesheet" href="">
+    <script src="./js/iniciodesesion.js"></script>
+</head>
+<body>
+    <h1>Samarios Rugby Club</h1>
+        
+    <div class="registrar">
+          <section class="form-login">
+          <form name="formulario" method="post" action="/inicio" onsubmit="return validar_formulario();" >
+          <h2>Inicio de Sesión</h2>
+          <input class="controls1" type="text" name="usuario" value="" placeholder="Usuario" id="usuario">
+          <input class="controls2" type="password" name="password" value="" placeholder="Contraseña" id="password">
+          <div>
+              <p class="imgpos"><img class="ojo" src="./imagenes/ojo.jpg" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();" /></p>
+          </div>                  
+          <input class="buttons" type="submit" value="Iniciar" onclick="validar_formulario2()" >
+          <p class="ref" ><a href="recuperar.html">¿Olvidaste tu contraseña?</a></p>
+          <p class="ref" ><a href="index.html">Volver</a></p>
+
+        </form>
+      </section>    
+  </div>
+  </body>
+</html>
